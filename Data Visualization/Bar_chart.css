@@ -1,0 +1,35 @@
+svg
+{
+  display: block;
+  margin : auto;
+}
+
+.bar{
+  border-radius : 50%;
+  fill:white;
+}
+
+.bar:hover{
+  fill: navy
+}
+
+#title
+{
+  text-align : center;
+  margin : auto;
+  color : navy;
+}
+
+#tooltip
+{
+  position : absolute;
+  top : 330px;
+  width : 200px;
+  height : 70px;
+  line-height : 10px;
+  font-family : monospace, arial, sans-serif;
+  text-align : center;
+  background : #fff;
+  color : navy;
+  font-weight : 600;
+}
