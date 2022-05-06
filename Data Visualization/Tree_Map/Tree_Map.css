@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Padauk&family=Roboto+Mono:wght@300&display=swap');
+
+svg{
+  display :block;
+  margin : auto;
+  position : relative;
+}
+
+body{
+  text-align : center;
+}
+
+#tooltip{
+  position : absolute;
+  background : #df2ce7;
+  z-index : 1;
+  padding: 5px;
+  opacity : 0;
+}
+
+p{
+  margin : 0;
+  font-size : 12px;
+  font-family : "Roboto Mono", monospace;
+}
+
+h1{
+  font-family : Anton, monospace;  
+}
+
+h3{
+  font-family : Padauk, monospace;  
+}
+
+text{
+  font-family : "Roboto Mono", monospace;
+}
+
+ul{
+  position : relative;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  width : 600px;
+  height : 80px;
+  margin : auto;
+  padding : 0;
+}
+
+li{
+  list-style-type : none;
+  width : 200px;
+  transform: scale(1);
+  transition: 0.5s;
+  text-align : center;
+  z-index : 1;
+}
+
+li a {
+  text-decoration : none;
+  color : navy;
+  font-family : Padauk, monospace;
+}
+
+.active{
+  transform : scale(1.3);
+}
+
+#indicator{
+  position : absolute;
+  left : 0;
+  width : 200px;
+  height : 80px;
+  background : olive;
+  transition : 0.5s;
+  border-radius : 10px;
+} 
+
+ul li:nth-child(1).active ~ #indicator{
+  left : calc(200px * 0);
+  background : olive;
+}
+
+ul li:nth-child(2).active ~ #indicator{
+  left : calc(200px * 1);
+  background : pink;
+}
+
+ul li:nth-child(3).active ~ #indicator{
+  left : calc(200px * 2);
+  background : silver;
+}
