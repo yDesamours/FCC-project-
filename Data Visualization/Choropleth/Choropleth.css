@@ -1,0 +1,18 @@
+#title, #description{
+  text-align : center
+}
+
+#legend path{
+  display : none;
+}
+
+svg{
+  display :block;
+  margin : auto;
+}
+
+#tooltip{
+  position : absolute;
+  background : #f6d412;
+  padding : 2px;
+}
